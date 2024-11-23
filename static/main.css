@@ -3,6 +3,30 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
+  .right-panel {
+            flex-grow: 1;
+            background-color: #2f3136;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            width: 80%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
    .verify-button {
            font-family: 'Inter', sans-serif;
             color: white;
@@ -32,9 +56,7 @@ html {
             transform: scale(1.05); /* Легкое увеличение кнопки */
         }
 
-        .verify-button:active {
-            background-color: #3c4b9c; /* Еще более темный оттенок при нажатии */
-        }
+   
 
         .verify-button:focus {
             outline: none;
