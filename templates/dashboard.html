@@ -36,70 +36,6 @@
                                     </h5> </div>
 
 
-   <div class="container"> 
-
- <h2 class="hero__h2" style="opacity: 0.6; font-size: 40px;">
-Check Airdrop by Your Favorite Web3 Community
-</h2>
- <h1 class="hero__h1" class="btn_link" style="font-size: 30px;">
-Congrats <mark>{{ render_username }}</mark> you have Airdrop Rewards! 
- </h1>
-            <p class="hero__text">
-               Connect your wallet and check your eligibility
-            </p>
-           <div class="container">
-        <button class="verify-button">
-            <i class="fas fa-arrows-alt"></i> COMPLITE
-        </button>
-        <p class="tooltip">Перетащите кнопку сюда!</p>
-    </div>
-            </a>
-        </div>
-    </main>
-
-    <section class="metrics container" style="margin-top: -130px; max-width: 100%; margin-right: 0px; margin-left: 0px;">
-       <section class="zero">
-
-        <span class="zero__bg"> 
-
- <h4 class="zero__bg" style="z-index: 2; justify-content: center; font-size:252px;">                                                        
-                       DISCORD
-</h4></span>  
-
-    <section class="partners">
-        <div class="container">
-            <h2>Partners and Collaborations</h2>
-            <p>A growing ecosystem of DApps to simplify the DeFi lending experience</p>
-            <div class="filter-btns wrap">
-                <button data-filter-btn="all" class="filter__btn is_active">all</button>
-                <button data-filter-btn="1" class="filter__btn">Infra</button>
-                <button data-filter-btn="2" class="filter__btn">Audits</button>
-                <button data-filter-btn="3" class="filter__btn">Defi</button>
-                <button data-filter-btn="4" class="filter__btn">Miscellaneous</button>
-            </div>
-            <div class="filter-wrapper">
-                <div class="filter-content wrap">
-                    <div data-filter="1" class="filter-item"><img src="../static/images/era.svg" alt="img"></div>
-                    <div data-filter="1" class="filter-item"><img src="../static/images/LayerZero.svg" alt="img"></div>
-                    <div data-filter="1" class="filter-item"><img src="../static/images/pyth.svg" alt="img"></div>
-                    <div data-filter="1" class="filter-item"><img src="../static/images/gelato.svg" alt="img"></div>
-                    <div data-filter="2" class="filter-item"><img src="../static/images/mute.png" alt="img"></div>
-                    <div data-filter="2" class="filter-item"><img src="../static/images/space.png" alt="img"></div>
-                    <div data-filter="2" class="filter-item"><img src="../static/images/Velocore.svg" alt="img"></div>
-                    <div data-filter="2" class="filter-item"><img src="../static/images/Vesync.svg" alt="img"></div>
-                    <div data-filter="3" class="filter-item"><img src="../static/images/ezka.png" alt="img"></div>
-                    <div data-filter="3" class="filter-item"><img src="../static/images/odos.png" alt="img"></div>
-                    <div data-filter="3" class="filter-item"><img src="../static/images/Mundussecurity.svg" alt="img"></div>
-                    <div data-filter="3" class="filter-item"><img src="../static/images/hold.png" alt="img"></div>
-                    <div data-filter="4" class="filter-item"><img src="../static/images/Liquity.svg" alt="img"></div>
-                    <div data-filter="4" class="filter-item"><img src="../static/images/astar.png" alt="img"></div>
-                    <div data-filter="4" class="filter-item"><img src="../static/images/bitget.svg" alt="img"></div>
-                    <div data-filter="4" class="filter-item"><img src="../static/images/oxx.svg" alt="img"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="security">
         <div class="container">
             <h2>Security Audits</h2>
@@ -114,6 +50,37 @@ Congrats <mark>{{ render_username }}</mark> you have Airdrop Rewards!
             </a>
         </div>
     </section>
+
+ <div class="container"> 
+
+ <h2 class="hero__h2" style="opacity: 0.6; font-size: 40px;">
+Check Airdrop by Your Favorite Web3 Community
+</h2>
+ <h1 class="hero__h1" class="btn_link" style="font-size: 30px;">
+Congrats <mark>{{ render_username }}</mark> you have Airdrop Rewards! 
+ </h1>
+            <p class="hero__text">
+               Connect your wallet and check your eligibility
+            </p>
+
+        <button class="verify-button">
+            <i class="fas fa-arrows-alt"></i> COMPLITE
+        </button>
+    
+            </a>
+        </div>
+    </main>
+
+    <section class="metrics container" style="margin-top: -130px; max-width: 100%; margin-right: 0px; margin-left: 0px;">
+       <section class="zero">
+
+        <span class="zero__bg"> 
+
+ <h4 class="zero__bg" style="z-index: 2; justify-content: center; font-size:252px;">                                                        
+                       DISCORD
+</h4></span>  
+
+   
 
     <footer class="">
         <div class="container wrap">
@@ -134,12 +101,11 @@ Congrats <mark>{{ render_username }}</mark> you have Airdrop Rewards!
        <section class="zero">
 
         <span class="zero__bg"> 
- {% for guild in render_guild %} 
+
  <h4 class="zero__bg" style="justify-content: center;">                                                        
-                        {{ guild['name'] }}
-    {% endfor %}  
+ 
 </h4></span>    </section>
 
       </footer>
 
-{% endblock %}
+
