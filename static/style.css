@@ -5,6 +5,66 @@ height: 100vh;
  background: #101827;
 background-image: linear-gradient(147deg, rgba(0, 0, 0, 0.3) 0%, rgb(0 0 0 / 72%) 100%);
 
+Discord */
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Стили кнопки */
+        .verify-button {
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #5865f2; /* Синий цвет Discord */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Иконка внутри кнопки */
+        .verify-button i {
+            margin-right: 8px;
+            font-size: 20px;
+            animation: bounce 1s infinite; /* Анимация иконки */
+        }
+
+        .verify-button:hover {
+            background-color: #4752c4; /* Темный синий оттенок при наведении */
+            transform: scale(1.05); /* Легкое увеличение кнопки */
+        }
+
+        .verify-button:active {
+            background-color: #3c4b9c; /* Еще более темный оттенок при нажатии */
+        }
+
+        .verify-button:focus {
+            outline: none;
+        }
+
+        /* Анимация иконки "bounce" */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px); /* Иконка будет слегка прыгать вверх и вниз */
+            }
+        }
+
+        /* Подсказка для перетаскивания */
+        .tooltip {
+            font-size: 14px;
+            color: #b9bbbe;
+            margin-top: 10px;
+            text-align: center;
+        }
 
 
 h4:last-child{
