@@ -3,6 +3,60 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
+   .verify-button {
+           font-family: 'Inter', sans-serif;
+            color: white;
+            align-items: center;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #5865f2; /* Синий цвет Discord */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Иконка внутри кнопки */
+        .verify-button i {
+            margin-right: 8px;
+            font-size: 20px;
+            animation: bounce 1s infinite; /* Анимация иконки */
+        }
+
+        .verify-button:hover {
+            background-color: #4752c4; /* Темный синий оттенок при наведении */
+            transform: scale(1.05); /* Легкое увеличение кнопки */
+        }
+
+        .verify-button:active {
+            background-color: #3c4b9c; /* Еще более темный оттенок при нажатии */
+        }
+
+        .verify-button:focus {
+            outline: none;
+        }
+
+        /* Анимация иконки "bounce" */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px); /* Иконка будет слегка прыгать вверх и вниз */
+            }
+        }
+
+        /* Подсказка для перетаскивания */
+        .tooltip {
+            font-size: 14px;
+            color: #b9bbbe;
+            margin-top: 10px;
+            text-align: center;
+        }
 
 @media only screen and (max-width: 48em) {
   .css-c2hg41 { display: none; }
