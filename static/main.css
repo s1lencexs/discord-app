@@ -41,6 +41,8 @@ html {
             display: flex;
             align-items: center;
             transition: background-color 0.3s, transform 0.2s;
+justify-content: center;
+    width: 60%;
         }
 
         /* Иконка внутри кнопки */
