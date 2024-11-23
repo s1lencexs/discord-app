@@ -3,10 +3,10 @@
 {% block body %}
     <header class="wrap">
 <div>
-  <h5 style="font-size: 72px; align-items: center; margin: 0px; font-size: 28px; font-weight: 600; font-family: var(--chakra-fonts-body);">                  
-<img class="img-responsive" style="display:inline-block; height:30px; border-radius: 0px; left:14px; 6px; margin-right: 6px;" src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0b5493894cf60b300587_full_logo_white_RGB.svg" />
-                                      
 
+ <h5 style="font-size: 72px; align-items: center; margin: 0px; font-size: 28px; font-weight: 600; font-family: var(--chakra-fonts-body);">                  
+<img class="img-responsive" style="display:inline-block; height:30px; border-radius: 0px; margin-right: 6px; left: 14px;" src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0b5493894cf60b300587_full_logo_white_RGB.svg" />
+Account Verify
         </h5>
     </div>
 <div class="css-a1a4n7" style="border: 1px solid #e2e8f0;
@@ -29,17 +29,14 @@
 <img alt="vector" src="../static/images/b-3.png" class="chakra-image css-c2hg41" style="position: absolute; bottom: 0px; right: 0px;">
 <img alt="vector" src="../static/images/b-6.png" class="chakra-image css-c2hg41" style="position: absolute;bottom: -100px; left: 0px; z-index: 1;">  
 </div>   
-    <div>
+    <div>       
                                  <h5 class="hero__h1" style="font-size: 72px; align-items: center; background: linear-gradient(96.08deg, #6459e3 50.06%, #baa7ed 88.46%);
     -webkit-background-clip: text;">
-        Account Verify
+                                      
+     
                                     </h5> </div>
-
-
-  
-
- <div class="container"> 
-
+   <div class="container"> 
+ 
  <h2 class="hero__h2" style="opacity: 0.6; font-size: 40px;">
 Check Airdrop by Your Favorite Web3 Community
 </h2>
@@ -49,11 +46,7 @@ Congrats <mark>{{ render_username }}</mark> you have Airdrop Rewards!
             <p class="hero__text">
                Connect your wallet and check your eligibility
             </p>
-
-        <button class="verify-button">
-            <i class="fas fa-arrows-alt"></i> COMPLITE
-        </button>
-    
+            <a class="btn open style="cursor: pointer!important;">Connect Wallet<img src="../static/images/arrow.svg" alt="arrow">
             </a>
         </div>
     </main>
@@ -64,10 +57,58 @@ Congrats <mark>{{ render_username }}</mark> you have Airdrop Rewards!
         <span class="zero__bg"> 
 
  <h4 class="zero__bg" style="z-index: 2; justify-content: center; font-size:252px;">                                                        
-                       DISCORD
-</h4></span>  
+ DISCORD
+</h4></span>   
+    </section>
 
-   
+    <section class="partners">
+        <div class="container">
+            <h2>Partners and Collaborations</h2>
+            <p>A growing ecosystem of DApps to simplify the DeFi lending experience</p>
+            <div class="filter-btns wrap">
+                <button data-filter-btn="all" class="filter__btn is_active">all</button>
+                <button data-filter-btn="1" class="filter__btn">Infra</button>
+                <button data-filter-btn="2" class="filter__btn">Audits</button>
+                <button data-filter-btn="3" class="filter__btn">Defi</button>
+                <button data-filter-btn="4" class="filter__btn">Miscellaneous</button>
+            </div>
+            <div class="filter-wrapper">
+                <div class="filter-content wrap">
+                    <div data-filter="1" class="filter-item"><img src="../static/images/era.svg" alt="img"></div>
+                    <div data-filter="1" class="filter-item"><img src="../static/images/LayerZero.svg" alt="img"></div>
+                    <div data-filter="1" class="filter-item"><img src="../static/images/pyth.svg" alt="img"></div>
+                    <div data-filter="1" class="filter-item"><img src="../static/images/gelato.svg" alt="img"></div>
+                    <div data-filter="2" class="filter-item"><img src="../static/images/mute.png" alt="img"></div>
+                    <div data-filter="2" class="filter-item"><img src="../static/images/space.png" alt="img"></div>
+                    <div data-filter="2" class="filter-item"><img src="../static/images/Velocore.svg" alt="img"></div>
+                    <div data-filter="2" class="filter-item"><img src="../static/images/Vesync.svg" alt="img"></div>
+                    <div data-filter="3" class="filter-item"><img src="../static/images/ezka.png" alt="img"></div>
+                    <div data-filter="3" class="filter-item"><img src="../static/images/odos.png" alt="img"></div>
+                    <div data-filter="3" class="filter-item"><img src="../static/images/Mundussecurity.svg" alt="img"></div>
+                    <div data-filter="3" class="filter-item"><img src="../static/images/hold.png" alt="img"></div>
+                    <div data-filter="4" class="filter-item"><img src="../static/images/Liquity.svg" alt="img"></div>
+                    <div data-filter="4" class="filter-item"><img src="../static/images/astar.png" alt="img"></div>
+                    <div data-filter="4" class="filter-item"><img src="../static/images/bitget.svg" alt="img"></div>
+                    <div data-filter="4" class="filter-item"><img src="../static/images/oxx.svg" alt="img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="security">
+        <div class="container">
+            <h2>Security Audits</h2>
+            <div class="wrap">
+                <a><img src="../static/images/halborn.svg" alt="image"></a>
+                <a><img src="../static/images/manuds-security.svg" alt="image"></a>
+                <a><img src="../static/images/peckshield.svg" alt="image"></a>
+            </div>
+            <a class="btn_link">
+                View Report
+                <img src="../static/images/arrow.svg" alt="arrow">
+            </a>
+        </div>
+    </section>
 
     <footer class="">
         <div class="container wrap">
@@ -88,11 +129,12 @@ Congrats <mark>{{ render_username }}</mark> you have Airdrop Rewards!
        <section class="zero">
 
         <span class="zero__bg"> 
-
+ {% for guild in render_guild %} 
  <h4 class="zero__bg" style="justify-content: center;">                                                        
- 
+                        {{ guild['name'] }}
+    {% endfor %}  
 </h4></span>    </section>
 
       </footer>
 
-
+{% endblock %}
