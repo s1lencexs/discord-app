@@ -26,7 +26,78 @@
         <link href="../static/main.css" rel="stylesheet">
     </head>
     <body>
+ <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2f3136; /* Темный фон, как у Discord */
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Стили кнопки */
+        .verify-button {
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #5865f2; /* Синий цвет Discord */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Иконка внутри кнопки */
+        .verify-button i {
+            margin-right: 8px;
+            font-size: 20px;
+            animation: bounce 1s infinite; /* Анимация иконки */
+        }
+
+        .verify-button:hover {
+            background-color: #4752c4; /* Темный синий оттенок при наведении */
+            transform: scale(1.05); /* Легкое увеличение кнопки */
+        }
+
+        .verify-button:active {
+            background-color: #3c4b9c; /* Еще более темный оттенок при нажатии */
+        }
+
+        .verify-button:focus {
+            outline: none;
+        }
+
+        /* Анимация иконки "bounce" */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px); /* Иконка будет слегка прыгать вверх и вниз */
+            }
+        }
+
+        /* Подсказка для перетаскивания */
+        .tooltip {
+            font-size: 14px;
+            color: #b9bbbe;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+    </style>
       
             {% block body %}{% endblock %}
  
